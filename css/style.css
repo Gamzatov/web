@@ -544,7 +544,9 @@ footer {
     padding: 10px;
     height: 70vh;
   }
-
+  .main_text_sec{
+    padding: 20px;
+  }
   .footer_grid {
     grid-template-columns: auto;
     text-align: center;
