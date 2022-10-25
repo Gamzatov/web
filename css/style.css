@@ -257,7 +257,7 @@ body {
     display: block;
     height: 10px;
     width: 25px;
-    border-top: 3px solid #eee;
+    border-top: 3px solid #fff;
   }
   .navbar .nav-btn label:hover,
   .navbar #nav-check:checked ~ .nav-btn label {
@@ -268,12 +268,17 @@ body {
     position: absolute;
     display: block;
     text-align: center;
-    width: 50%;
+    width: 100%;
     background-color: rgb(9, 14, 90);
     transition: all 0.3s ease-in;
     overflow-y: hidden;
+    /* padding-top: 80px; */
     top: 70px;
     right: 0px;
+  }
+  .active  .nav-btn label span{
+    border-top:3px solid #2196F5
+
   }
   .navbar .nav-links a {
     display: block;
@@ -442,20 +447,62 @@ body {
    
     margin-top: 30px;
   }
+  .footer_logo > h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
   @media(max-width:762px){
     .grid_img{
-      margin-left: 20px;
+      margin-left: 0px;
       margin-top: -80px;
-      margin-right: 20px;
+      margin-right: 0px;
+    }
+    .main_btn{
+      font-size: 13px;
+    }
+    .main_section{
+      padding: 10px;
+      height: 70vh;
+    }
+    .footer_grid{
+      grid-template-columns: auto;
+      text-align: center;
+    }
+    .socials_grid{
+      margin: 30px auto;
+      max-width: 250px;
+    }
+    .grid_item{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .flex_img > img{
+      max-width: 70px;
+    }
+    .t_section{
+      padding: 20px;
     }
     .grid_container{
       flex-direction: column;
+    }
+    .flex_img{
+      max-width: 105px;
+    }
+    .nav-btn{
+      position: fixed;
     }
     .grid_text{
       width: 100%;
       margin-left: 0;
       background: transparent;
       color: #fff;
+    }
+    .grid_section{
+      grid-template-columns: auto;
+    }
+    .flex_img{
+      width: 100%;
     }
     .s_section{
       padding: 0 10px;
