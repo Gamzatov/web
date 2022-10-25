@@ -468,11 +468,32 @@ footer {
   z-index: 999;
   transition: 0.3s;
 }
+.privacy_list{
+  padding-left: 20px;
+}
 .privacy_btn {
   /* float: right; */
   margin-top: 10px;
-  display: flex;
+  /* display: flex; */
+  float: right;
   justify-content: space-between;
+}
+.text_wrapper{
+  padding: 20px;
+}
+.privacy_btn_btn{
+  background-color: #2196f5;
+  padding: 10px;
+  border: none;
+  border: 1px solid #2196f5;
+  cursor: pointer;
+  transition: .2s;
+  color: #fff;
+}
+.privacy_btn_btn:hover{
+  border: 1px solid #2196f5;
+  background: transparent;
+  color: #2196f5;
 }
 .conditions {
   height: 400px;
