@@ -423,15 +423,45 @@
                 and repeat visits. By clicking “Accept”, you consent to the use of ALL the cookies.
             </p>
             <div class="privacy_btn">
-                <a href="#">
+                <!-- <a href="#">
                     Cookie settings
-                </a>
-                <button onclick="hide()" class="privacy_btn">
+                </a> -->
+                <button onclick="hide()" class="privacy_btn_btn">
                     Accept
                 </button>
             </div>
         </div>
     </div>
+    <div class="overlay" id="overlay">
+        <div class="support_pop">
+            <div class="support_inner" id="popWindow">
+                <h3 style="margin: 20px auto;">
+                    Fill the form to get answer
+                </h3>
+                <div class="close_wrapper">
+                    <button onclick="closePop()"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
+                <form class="sup_form" action="">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" name="tel" placeholder="Phone">
+                    <textarea name="message" id="" placeholder="Message"></textarea>
+                    <div class="btn_wrapper">
+                        <button class="sub_btn">
+                            Submit
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="sup_show_btn" onclick="showPop()">
+        <button>
+            <ion-icon name="help-circle-outline"></ion-icon>
+        </button>
+    </div>
+    <script src="../js/index.js"></script>
     <script>
         let privacy = document.getElementById('privacy');
         function show() {
