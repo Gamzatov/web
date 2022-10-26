@@ -645,11 +645,20 @@ footer {
   z-index: 9999;
   backdrop-filter: blur(20px);
 }
+.mob_img{
+  display: none;
+}
 @media (max-width: 762px) {
   .grid_img {
     margin-left: 0px;
     margin-top: -80px;
     margin-right: 0px;
+  }
+  .mob_img{
+    display: block;
+  }
+  .desc_img{
+    display: none;
   }
   .grid_text{
     padding: 20px;
