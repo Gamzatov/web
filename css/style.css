@@ -405,10 +405,10 @@ body {
   height: 2px;
   background-color: #fff;
 }
-.active > .nav-links > a {
+.active > .nav-links > .links_inner > a {
   color: #111;
 }
-.active > .nav-links > a:hover {
+.active > .nav-links > .links_inner a:hover {
   color: #4ba1e8;
 }
 footer {
