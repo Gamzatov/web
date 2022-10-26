@@ -471,6 +471,9 @@ footer {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+p{
+  font-weight: 200;
+}
 .privacy_full {
   left: -1800px;
   width: 90%;
