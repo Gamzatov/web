@@ -6,11 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/perloader.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- <div id="preloader" class="visible"></div> -->
+    <div class="loader visible" id="preloader">
+
+        <div class="loader__element">
+            <p class="title" style="text-align: center; color: #fff; font-size: 30px;">
+                DESKRUNNER
+            </p>
+        </div>
+    </div>
     <div class="navbar" id="nav">
         <!-- Navbar logo -->
         <div class="nav-header">
@@ -23,6 +33,7 @@
             </div>
         </div>
         <input type="checkbox" id="nav-check">
+
         <div class="nav-btn">
             <label for="nav-check">
                 <span></span>
@@ -30,6 +41,7 @@
                 <span></span>
             </label>
         </div>
+
 
         <!-- Navbar items -->
         <div class="nav-links">
@@ -77,8 +89,7 @@
     <div class="t_section">
         <div class="container">
             <div class="grid_section">
-                <div class="grid_item" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+                <div class="grid_item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="flex_img">
                         <img src="./assets/icons/bulb.png" alt="">
                     </div>
@@ -92,8 +103,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="grid_item" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+                <div class="grid_item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="flex_img">
                         <img src="./assets/icons/partners.png" alt="">
                     </div>
@@ -107,8 +117,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="grid_item" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+                <div class="grid_item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="flex_img">
                         <img src="./assets/icons/case.png" alt="">
                     </div>
@@ -122,8 +131,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="grid_item" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+                <div class="grid_item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="flex_img">
                         <img src="./assets/icons/headset.png" alt="">
                     </div>
@@ -136,8 +144,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="grid_item" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+                <div class="grid_item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="flex_img">
                         <img src="./assets/icons/individual.png" alt="">
                     </div>
@@ -151,8 +158,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="grid_item" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+                <div class="grid_item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="flex_img">
                         <img src="./assets/icons/integrity.png" alt="">
                     </div>
@@ -333,9 +339,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         $(function () {
             $(window).on("scroll", function () {
@@ -348,7 +354,24 @@
             });
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script>
+        function loadData() {
+            return new Promise((resolve, reject) => {
+                // setTimeout не является частью решения
+                // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
+                setTimeout(resolve, 1000);
+            })
+        }
 
+        loadData()
+            .then(() => {
+                let preloaderEl = document.getElementById('preloader');
+                preloaderEl.classList.add('hidden');
+                preloaderEl.classList.remove('visible');
+            })
+    </script>
 </body>
 
 </html>

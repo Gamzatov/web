@@ -72,6 +72,7 @@ body {
 .grid_img > img {
   max-width: 1000px;
   width: 100%;
+  border-radius: 3px;
 }
 .grid_img {
   position: relative;
@@ -85,6 +86,7 @@ body {
 }
 .grid_text {
   margin-left: -10%;
+  border-radius: 3px;
   width: 40%;
   z-index: 99;
   position: relative;
@@ -95,6 +97,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   content: "";
   position: absolute;
+  border-radius: 3px;
   top: 0;
   left: 0;
   width: 100%;
@@ -183,7 +186,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   transition: 0.2s;
-  border-radius: 20px;
+  border-radius: 3px;
 }
 .main_btn:hover {
   background: transparent;
@@ -458,6 +461,8 @@ footer {
 .privacy {
   position: fixed;
   bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   left: 50%;
   transform: translate(-50%, 0);
   background-color: #fff;
@@ -467,7 +472,7 @@ footer {
   cursor: pointer;
 }
 .privacy_full {
-  left: -800px;
+  left: -1800px;
   width: 90%;
   padding: 20px;
   position: fixed;
@@ -648,6 +653,65 @@ footer {
 .mob_img{
   display: none;
 }
+
+
+
+.ico-btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: all .20s ease-in;
+  border-radius: 50%;
+}
+
+.ico-btn:hover{
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.ico-btn__burger,
+.ico-btn__burger::before,
+.ico-btn__burger::after{
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: all .25s cubic-bezier(0.4, 0.0, 0.2, 1);;
+}
+
+.ico-btn__burger::before{
+  content: '';
+  position: absolute;
+  transform: translateY(-6px);
+}
+
+.ico-btn__burger::after{
+  content: '';
+  position: absolute;
+  transform: translateY(6px);
+}
+
+/* -------------------------------------------
+**  ANIMATION 
+============================================= */
+.ico-btn.is-active .ico-btn__burger{
+  background: transparent;
+}
+
+.ico-btn.is-active .ico-btn__burger::before{
+  transform: rotate(-45deg);
+}
+
+.ico-btn.is-active .ico-btn__burger::after{
+  transform: rotate(45deg);
+}
+
+.ico-btn.is-active{
+  transform: rotate(360deg);
+}
 @media (max-width: 762px) {
   .grid_img {
     margin-left: 0px;
@@ -731,4 +795,17 @@ footer {
   .img_text {
     font-size: 1.5rem;
   }
+}
+
+
+.visible {
+visibility: visible;
+opacity: 1;
+transition: opacity 2s linear;
+}
+
+.hidden {
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s 2s, opacity 2s linear;
 }

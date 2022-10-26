@@ -9,7 +9,7 @@ function showPop(){
 }
 function closePop(){
     popOverlay.style.visibility = 'hidden';
-    popWindow.style.left = '-800px'
+    popWindow.style.left = '-1800px'
     // popWindow.style.top = '-800px'
 }
 //aos
@@ -40,3 +40,4 @@ AOS.init({
 
 });
 // aos end
+
