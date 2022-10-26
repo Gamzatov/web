@@ -12,6 +12,14 @@ function closePop(){
     popWindow.style.left = '-1800px'
     // popWindow.style.top = '-800px'
 }
+
+let privacy = document.getElementById('privacy');
+function show() {
+    privacy.style.left = '50%';
+}
+function hide() {
+    privacy.style.left = '-1800px'
+}
 //aos
 AOS.init();
 
