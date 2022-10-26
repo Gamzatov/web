@@ -12,7 +12,7 @@
 }
 .logo_text{
   font-size: 2rem;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
   color: #fff;
   text-decoration: none;
 }
@@ -151,6 +151,7 @@ body {
 }
 .flex_img {
   width: 50%;
+  text-align: center;
   max-width: 100px;
 }
 .sec_wrapper {
@@ -477,6 +478,8 @@ p{
 }
 .privacy_full {
   left: -1800px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   width: 90%;
   padding: 20px;
   position: fixed;
@@ -504,6 +507,7 @@ p{
   background-color: #4ba1e8;
   padding: 10px;
   border: none;
+  border-radius: 3px;
   border: 1px solid #4ba1e8;
   cursor: pointer;
   transition: .2s;
@@ -793,6 +797,12 @@ p{
   }
   .title {
     font-size: 2rem;
+  }
+  .footer_logo{
+    margin: 50px auto;
+  }
+  footer{
+    padding: 20px 0;
   }
 }
 @media (max-width: 400px) {
