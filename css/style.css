@@ -762,7 +762,7 @@ p{
     text-align: center;
   }
   .flex_img > img {
-    max-width: 70px;
+    max-width: 50px;
   }
   .t_section {
     padding: 20px;
@@ -789,7 +789,7 @@ p{
     width: 100%;
   }
   .s_section {
-    padding: 0 10px;
+    padding: 30px 10px;
     background-image: linear-gradient(140deg, #4ba1e8 50%, #4a2d89 100%);
   }
   .img_text {
