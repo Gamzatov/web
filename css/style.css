@@ -151,7 +151,7 @@ body {
 }
 .flex_img {
   width: 50%;
-  max-width: 140px;
+  max-width: 100px;
 }
 .sec_wrapper {
   position: relative;
@@ -186,6 +186,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   transition: 0.2s;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
 }
 .main_btn:hover {
@@ -202,7 +203,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .flex_img > img {
-  max-width: 100px;
+  max-width: 70px;
   width: 100%;
 }
 .navbar {
