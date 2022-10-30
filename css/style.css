@@ -105,9 +105,11 @@ body {
 }
 .img_text {
   position: absolute;
+  max-width: 400px;
+  width: 100%;
   top: 50%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 0 0 10px #111;
   left: 50%;
   color: #fff;
@@ -239,8 +241,9 @@ body {
   font-size: 17px;
   color: rgb(9, 14, 90);
 }
-.navbar .nav-links a {
+.navbar .nav-links > .links_inner > a {
   padding: 10px 12px;
+ 
   text-decoration: none;
   color: white;
 }
@@ -389,12 +392,12 @@ body {
   transform: translate(-50%, 0%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
-.nav-links > a {
+.links_inner > a {
   position: relative;
   text-align: center;
   transition: 0.2s;
 }
-.nav-links > a:hover:after {
+.links_inner > a:hover:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -727,6 +730,13 @@ p{
     margin-top: -80px;
     margin-right: 0px;
   }
+  .active > .nav-links > .links_inner > a {
+    color: #fff;
+    font-size: 30px;
+  }
+  .navbar .nav-links > .links_inner > a{
+    font-size: 30px;
+  }
   .mob_img{
     display: block;
   }
@@ -795,6 +805,8 @@ p{
   }
   .img_text {
     font-size: 2rem;
+    max-width: 300px;
+
   }
   .title {
     font-size: 2rem;

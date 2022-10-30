@@ -73,7 +73,7 @@
                     <img class="desc_img" src="./assets/img/bg/imgB.jpg" alt="">
                     <img class="mob_img" src="./assets/img/bg/img_mob.jpg" alt="">
                     <span class="img_text">
-                        The is no finish line in running a desk.
+                        The is no finish line <br> in running a desk.
                     </span>
                 </div>
                 <div class="grid_text" data-aos="fade-left">
@@ -349,21 +349,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
-    <script>
-        function loadData() {
-            return new Promise((resolve, reject) => {
-                // setTimeout не является частью решения
-                // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
-                setTimeout(resolve, 1000);
-            })
-        }
-        loadData()
-            .then(() => {
-                let preloaderEl = document.getElementById('preloader');
-                preloaderEl.classList.add('hidden');
-                preloaderEl.classList.remove('visible');
-            })
-    </script>
 </body>
 
 </html>

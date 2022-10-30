@@ -20,6 +20,22 @@ function show() {
 function hide() {
     privacy.style.left = '-1800px'
 }
+
+// preloader
+function loadData() {
+  return new Promise((resolve, reject) => {
+      // setTimeout не является частью решения
+      // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
+      setTimeout(resolve, 2500);
+  })
+}
+loadData()
+  .then(() => {
+      let preloaderEl = document.getElementById('preloader');
+      preloaderEl.classList.add('hidden');
+      preloaderEl.classList.remove('visible');
+  })
+  // preloader end
 //aos
 AOS.init();
 
