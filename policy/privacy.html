@@ -6,22 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/perloader.css">
     <title>Privacy Policy</title>
 </head>
 
 <body>
+      <!-- <div id="preloader" class="visible"></div> -->
+      <div class="loader visible" id="preloader">
+
+        <div class="loader__element">
+            <p class="title" style="text-align: center; color: #fff; font-size: 30px;">
+                DESKRUNNER
+            </p>
+        </div>
+    </div>
     <div class="navbar" id="nav">
         <!-- Navbar logo -->
         <div class="nav-header">
             <div class="nav-logo">
-                <a href="../index.html">
-                    <img src="logo.png" width="100px" alt="logo">
+                <a href="./index.html" style="text-decoration: none;">
+                    <p class="logo_text">
+                        Deskrunner
+                    </p>
                 </a>
             </div>
         </div>
-
-        <!-- responsive navbar toggle button -->
         <input type="checkbox" id="nav-check">
+
         <div class="nav-btn">
             <label for="nav-check">
                 <span></span>
@@ -30,35 +41,18 @@
             </label>
         </div>
 
+
         <!-- Navbar items -->
         <div class="nav-links">
-            <a href="#">Product</a>
-            <a href="#">About</a>
-
-            <!-- Dropdown menu -->
-            <!-- <div class="dropdown"> -->
-            <a class="dropBtn" href="#">Pricing
-                <i class="fas fa-angle-down"></i>
-            </a>
-            <!-- <div class="drop-content">
-                    <a href="#">Web Design</a>
-                    <a href="#">Marketing</a>
-                    <a href="#">WordPress</a>
-                    <div class="dropdown2">
-                        <a class="dropBtn2" href="#">More
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                        <div class="drop-content2">
-                            <a href="#">HTML</a>
-                            <a href="#">CSS</a>
-                            <a href="#">JavaScript</a>
-                            <a href="#">jQuery</a>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div> -->
-
-            <a href="#">Contacts</a>
+            <div class="links_inner">
+                <a href="#">Product</a>
+                <a href="#">About</a>
+                <!-- Dropdown menu -->
+                <a class="dropBtn" href="#">Pricing
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <a href="#">Contacts</a>
+            </div>
         </div>
 
     </div>
@@ -71,7 +65,7 @@
             </div>
         </div>
     </div>
-    <div class="privacy_text_sec">
+    <div class="main_text_sec">
         <div class="container">
             <div class="text_wrapper">
                 <p>
