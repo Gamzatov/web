@@ -11,10 +11,13 @@
   z-index: 1;
 }
 .logo_text{
-  font-size: 3rem;
+  font-size: 2rem;
   /* font-family: 'Quicksand', sans-serif; */
   color: #fff;
   text-decoration: none;
+}
+.footer_logo_text{
+  font-size: 3rem;
 }
 .title {
   font-size: 4rem;
@@ -724,11 +727,26 @@ p{
 .ico-btn.is-active{
   transform: rotate(360deg);
 }
+@media(max-width:900px){
+  .main_inner > .title {
+    font-size: 3rem;
+    margin-top: 15%;
+  }
+   .grid_img{
+    width: 66%;
+  }
+  .grid_text{
+    padding: 30px;
+  }
+}
 @media (max-width: 762px) {
   .grid_img {
     margin-left: 0px;
     margin-top: -80px;
     margin-right: 0px;
+  }
+  .grid_container > .grid_img{
+    width: 100%;
   }
   .active > .nav-links > .links_inner > a {
     color: #fff;
@@ -819,7 +837,7 @@ p{
   }
   .links_inner{
     position: absolute;
-    top: 50%;
+    top: 400%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
