@@ -11,7 +11,7 @@
   z-index: 1;
 }
 .logo_text{
-  font-size: 2rem;
+  font-size: 3rem;
   /* font-family: 'Quicksand', sans-serif; */
   color: #fff;
   text-decoration: none;
@@ -39,7 +39,7 @@
   width: 100%;
 }
 .active > .nav-header > .nav-logo > a > p {
-  color: #4ba1e8;
+  color: #E52A2D;
 }
 .main_section {
   background: #4ba1e8;
