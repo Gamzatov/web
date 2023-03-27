@@ -765,10 +765,7 @@ input{
 .sub_p:hover{
   color: #4ba1e8;
 }
-.phone_wrapper > a{
-  font-size: 22px;
-  color: #666;
-}
+
 textarea{
   resize: none;
   border: 2px solid #eaeaea;
@@ -805,12 +802,12 @@ textarea{
   }
 }
 
-.container {
+/* .container {
   margin: 0 auto;
   padding: 50px 0 0;
   max-width: 960px;
   width: 100%;
-}
+} */
 
 .panel {
   background-color: #fff;
@@ -941,6 +938,27 @@ textarea{
     margin-left: 0px;
     margin-top: -80px;
     margin-right: 0px;
+  }
+  .info_wrapper {
+    text-align: center;
+  }
+  form{
+    text-align: center;
+  }
+  input{
+    margin: 10px auto;
+  }
+  textarea{
+    margin: 10px auto;
+  }
+  .iti{
+    margin: 10px auto !important;
+  }
+  .grid_container_contacts{
+    grid-template-columns: 1fr;
+  }
+  .sub_p{
+    color: #111;
   }
   .grid_container > .grid_img{
     width: 100%;
