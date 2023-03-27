@@ -1,0 +1,9 @@
+input.error {
+    border: 1px solid #dd5979 !important;
+    background-color: #dd5979 !important;
+}
+
+input.valid {
+    border: 1px solid green !important;
+    background-color: green !important;
+}
