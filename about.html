@@ -10,7 +10,10 @@
     <link href="./css/validation.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/intlTelInput.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Contacts | DESKRUNNER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+    <title>About | DESKRUNNER</title>
 </head>
 
 <body>
@@ -71,7 +74,7 @@
     </div>
     <div class="s_section">
         <div class="container">
-            <div class="grid_container_contacts">
+            <!-- <div class="grid_container_contacts">
                 <div class="info_wrapper" data-aos="fade-right">
                     <p class="subtitle">
                         One system - many devices 
@@ -85,23 +88,88 @@
                     <img style="max-width: 500px;" src="./assets/img/user.png" alt="">
                    </div>
                 </div>
-            </div>
-            <div class="grid_container_contacts">
-                <div class="info_form" data-aos="fade-left">
-                    <div class="img_wrap_about">
-                     <img style="max-width: 500px;" src="./assets/img/user.png" alt="">
+            </div> -->
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="customers-testimonials" class="owl-carousel">
+
+                            <!--TESTIMONIAL 1 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-responsive"
+                                        src="https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg"
+                                        alt="">
+                                    <div class="item-details">
+                                        <h5>Chicken for two Roasted <span>$21</span></h5>
+                                        <p>There was a time when Chinese food in this country meant (Americanized)
+                                            Cantonese food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF TESTIMONIAL 1 -->
+                            <!--TESTIMONIAL 2 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-responsive"
+                                        src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg"
+                                        alt="">
+                                    <div class="item-details">
+                                        <h5>Chicken for two Roasted <span>$21</span></h5>
+                                        <p>There was a time when Chinese food in this country meant (Americanized)
+                                            Cantonese food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF TESTIMONIAL 2 -->
+                            <!--TESTIMONIAL 3 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-responsive"
+                                        src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg"
+                                        alt="">
+                                    <div class="item-details">
+                                        <h5>Chicken for two Roasted <span>$21</span></h5>
+                                        <p>There was a time when Chinese food in this country meant (Americanized)
+                                            Cantonese food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF TESTIMONIAL 3 -->
+                            <!--TESTIMONIAL 4 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-responsive"
+                                        src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg"
+                                        alt="">
+                                    <div class="item-details">
+                                        <h5>Chicken for two Roasted <span>$21</span></h5>
+                                        <p>There was a time when Chinese food in this country meant (Americanized)
+                                            Cantonese food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF TESTIMONIAL 4 -->
+                            <!--TESTIMONIAL 5 -->
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-responsive"
+                                        src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg"
+                                        alt="">
+                                    <div class="item-details">
+                                        <h5>Chicken for two Roasted <span>$21</span></h5>
+                                        <p>There was a time when Chinese food in this country meant (Americanized)
+                                            Cantonese food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF TESTIMONIAL 5 -->
+                        </div>
                     </div>
-                 </div>
-                <div class="info_wrapper" data-aos="fade-right">
-                    <p class="subtitle">
-                        All-in-one system
-                    </p>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla dolorem voluptatum, hic commodi sit modi distinctio perspiciatis totam ullam quae quia laborum voluptatem saepe harum aut et assumenda reprehenderit!
-                    </p>
                 </div>
-              
             </div>
+
         </div>
     </div>
     <div class="sign_section">
@@ -258,8 +326,39 @@
             <ion-icon name="help-circle-outline"></ion-icon>
         </button>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            "use strict";
+            $('#customers-testimonials').owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
+                margin: 30,
+                autoplay: true,
+                dots: true,
+                nav: true,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1170: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
     <script src="./js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" id='jquery-js'></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" id='jquery-js'></script> -->
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -290,7 +389,7 @@
     </script>
     <script src="./js/validation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput-jquery.js"></script>
-
+   
 </body>
 
 </html>
