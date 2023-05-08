@@ -784,6 +784,29 @@ p{
   grid-template-columns: 1fr 1fr;
   margin: 50px auto;
 }
+.img_wrap_about > img{
+  max-width: 500px;
+  width: 100%;
+}
+.logo_img_wrapper{
+  width: 250px;
+  height: 80px;
+  background: url('../img/white_logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.active .logo_img_wrapper{
+  width: 250px;
+  height: 80px;
+  background: url('../img/logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid_container_contacts{
+  padding: 15px;
+}
 input{
   display: block;
   padding: 10px;
