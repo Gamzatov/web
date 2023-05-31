@@ -789,7 +789,7 @@ p{
   width: 100%;
 }
 .logo_img_wrapper{
-  width: 250px;
+  width: 150px;
   height: 80px;
   background: url('../img/white_logo.png');
   background-size: contain;
@@ -797,7 +797,7 @@ p{
   background-repeat: no-repeat;
 }
 .active .logo_img_wrapper{
-  width: 250px;
+  width: 150px;
   height: 80px;
   background: url('../img/logo.png');
   background-size: contain;
