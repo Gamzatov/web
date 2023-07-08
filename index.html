@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/perloader.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="./css/validation.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/intlTelInput.min.css">
+    <link rel="stylesheet" href="./css/intlTelInput.min.css">
     <title>DeskRunner</title>
 </head>
 
@@ -23,70 +23,86 @@
             </p>
         </div>
     </div> -->
-    <div class="navbar" id="nav">
-        <!-- Navbar logo -->
-        <div class="nav-header">
-            <div class="nav-logo">
-                <a href="./index.html" style="text-decoration: none;">
-                    <!-- <p class="logo_text">
+    <div class="nav_back">
+        <div class="navbar">
+
+            <!-- Navbar logo -->
+            <div class="nav-header">
+                <div class="nav-logo">
+                    <a href="./index.html" style="text-decoration: none;">
+                        <!-- <p class="logo_text">
                         Deskrunner
                     </p> -->
-                    <div class="logo_img_wrapper"></div>
-                </a>
+                        <div class="logo_img_wrapper"></div>
+                    </a>
+                </div>
             </div>
-        </div>
-        <input type="checkbox" id="nav-check">
+            <input type="checkbox" id="nav-check">
 
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
 
 
-        <!-- Navbar items -->
-        <div class="nav-links">
-            <div class="links_inner">
-                <a href="./index.html">Product</a>
-                <a href="./about.html">About</a>
-                <!-- Dropdown menu -->
-                <!-- <a class="dropBtn" href="./pricing.html">Pricing
+            <!-- Navbar items -->
+            <div class="nav-links">
+                <div class="links_inner">
+                    <a href="./index.html">Product</a>
+                    <a href="./about.html">About</a>
+                    <!-- Dropdown menu -->
+                    <!-- <a class="dropBtn" href="./pricing.html">Pricing
                     <i class="fas fa-angle-down"></i>
                 </a> -->
-                <a href="./contacts.html">Contact</a>
-                <a href="" class="primary"> Book a Free trial</a>
+                    <a href="./contacts.html">Contact</a>
+                    <a class="primary" onclick="showPop()" style="cursor: pointer;"> DEMO</a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
     <div class="main_section">
         <div class="main_section_overlay">
-        <div class="container main_inner">
-            <p class="title" data-aos="zoom-in-up">
-                The handiest trading platform solution for brokers and traders.
-            </p>
-        </div>
+            <div class="container main_inner">
+                <p class="title" data-aos="zoom-in-up">
+                    The handiest trading platform solution for brokers and traders.
+                </p>
+            </div>
         </div>
     </div>
     <div class="s_section">
         <div class="container">
             <div class="grid_container">
                 <div class="grid_img" data-aos="fade-right">
-                    <img class="desc_img" src="./assets/img/bg/imgB.jpg" alt="">
-                    <img class="mob_img" src="./assets/img/bg/img_mob.jpg" alt="">
-                    <span class="img_text">
-                        The is no finish line <br> in running a desk.
-                    </span>
+                    <!-- <img class="desc_img" src="./assets/img/bg/imgB.jpg" alt=""> -->
+                    <!-- <img class="mob_img" src="./assets/img/bg/img_mob.jpg" alt=""> -->
+                    <div class="title_text">
+                        <p class="img_text">
+                            <span class="red_">
+                                [
+                            </span> All-In-One
+                            <span class="red_">
+                                ]
+                            </span>
+                        </p>
+                        <p>
+                            Trading Platform
+                        </p>
+                    </div>
+
                 </div>
                 <div class="grid_text" data-aos="fade-left">
                     <p>
-                        Our goal is to provide a simple and understandable tool that allows clients to quickly and
-                        easily get started, and brokers to grow and control their business.
+                        You get everything you need for the price of just a trading platform.
+
                     </p>
                     <p>
-                        Deskrunner - this is a community of people managing their departments.
+                        <b>
+                            Trading platform, CRM, Back office, Affiliates,Telephony, Support, Ai and more
+                        </b>
                     </p>
                 </div>
             </div>
@@ -192,7 +208,7 @@
                         </div>
                         <div class="btn_wrapper">
                             <a href="#">
-                                <button class="main_btn">
+                                <button class="main_btn" onclick="showPop()">
                                     See how deskrunner can help you run a desk
                                 </button>
                             </a>
@@ -358,10 +374,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
     <script defer>
         window.serverProps = {
-            oldInputs:  null ,
-            validationErrors:  null ,
-                server_error_code:  null ,
-                    frod_autologin_url:  null 
+            oldInputs: null,
+            validationErrors: null,
+            server_error_code: null,
+            frod_autologin_url: null
         };
     </script>
     <script src="./js/validation.js"></script>
